@@ -1,0 +1,14 @@
+version: "2"
+services:
+  jsdev:
+    build:
+      context:  ./base
+    ports:
+      - 20080:80
+      - 20443:443
+      - 28888:8888
+      - 28080:8080
+    environment:
+      HOME: /lagom
+    tty: true
+

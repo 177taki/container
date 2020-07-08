@@ -1,0 +1,14 @@
+version: "2"
+services:
+  acap3:
+    build:
+      context:  .
+    ports:
+      - 10080:80
+      - 10443:443
+      - 18888:8888
+      - 18080:8080
+      - 10554:554
+    environment:
+      HOME: /acap
+    tty: true
